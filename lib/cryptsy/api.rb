@@ -8,7 +8,7 @@ module Cryptsy
   module API
     class PublicMethod
       include HTTParty
-      base_uri "http://pubapi.cryptsy.com"
+      base_uri "http://pubapi2.cryptsy.com"
 
       def execute_method(all_markets, single_market, marketid)
         api_method = marketid.nil? ? all_markets : single_market
